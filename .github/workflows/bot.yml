@@ -29,7 +29,7 @@ jobs:
       
     - name: Build
       run: |
-        make O=out ARCH=arm64 sirius_defconfig
+        make O=out ARCH=arm64 sirius_user_defconfig
         PATH="${PWD}/clang/bin:${PWD}/aarch64-linux-android-4.9/bin:${PATH}" \
         make -j4 O=out \
               ARCH=arm64 \
